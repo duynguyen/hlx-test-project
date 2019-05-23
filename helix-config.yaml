@@ -1,0 +1,15 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo "https://github.com/duynguyen/hlx-test-project.git"
+
+strains:
+  - name: default
+    code: https://github.com/duynguyen/hlx-test-project.git#master
+    content: https://github.com/duynguyen/hlx-test-project.git#master
+    static: https://github.com/duynguyen/hlx-test-project.git/htdocs#master
+    package: duynguyen/github-com--duynguyen--hlx-test-project--master-dirty
